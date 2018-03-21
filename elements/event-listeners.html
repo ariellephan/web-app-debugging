@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Internal Chrome Pages · Web Application Debugging</title>
+        <title>Event Listeners · Web Application Debugging</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="navigation.html" />
+    <link rel="next" href="computed-properties.html" />
     
     
-    <link rel="prev" href="./" />
+    <link rel="prev" href="dom-breakpoints.html" />
     
 
     </head>
@@ -109,9 +109,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="./">
+        <li class="chapter " data-level="2.1" data-path="../basics/">
             
-                <a href="./">
+                <a href="../basics/">
             
                     
                     Basics
@@ -123,9 +123,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.1.1" data-path="chrome-pages.html">
+        <li class="chapter " data-level="2.1.1" data-path="../basics/chrome-pages.html">
             
-                <a href="chrome-pages.html">
+                <a href="../basics/chrome-pages.html">
             
                     
                     Internal Chrome Pages
@@ -136,9 +136,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="navigation.html">
+        <li class="chapter " data-level="2.1.2" data-path="../basics/navigation.html">
             
-                <a href="navigation.html">
+                <a href="../basics/navigation.html">
             
                     
                     Navigation
@@ -149,9 +149,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.3" data-path="settings.html">
+        <li class="chapter " data-level="2.1.3" data-path="../basics/settings.html">
             
-                <a href="settings.html">
+                <a href="../basics/settings.html">
             
                     
                     Settings
@@ -167,9 +167,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../elements/">
+        <li class="chapter " data-level="2.2" data-path="./">
             
-                <a href="../elements/">
+                <a href="./">
             
                     
                     Elements
@@ -181,9 +181,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.1" data-path="../elements/styles.html">
+        <li class="chapter " data-level="2.2.1" data-path="styles.html">
             
-                <a href="../elements/styles.html">
+                <a href="styles.html">
             
                     
                     Styles
@@ -194,9 +194,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.2" data-path="../elements/less-sourcemaps.html">
+        <li class="chapter " data-level="2.2.2" data-path="less-sourcemaps.html">
             
-                <a href="../elements/less-sourcemaps.html">
+                <a href="less-sourcemaps.html">
             
                     
                     Source Maps
@@ -207,9 +207,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.3" data-path="../elements/dom-breakpoints.html">
+        <li class="chapter " data-level="2.2.3" data-path="dom-breakpoints.html">
             
-                <a href="../elements/dom-breakpoints.html">
+                <a href="dom-breakpoints.html">
             
                     
                     DOM Breakpoints
@@ -220,9 +220,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4" data-path="../elements/event-listeners.html">
+        <li class="chapter active" data-level="2.2.4" data-path="event-listeners.html">
             
-                <a href="../elements/event-listeners.html">
+                <a href="event-listeners.html">
             
                     
                     Event Listeners
@@ -233,9 +233,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.5" data-path="../elements/computed-properties.html">
+        <li class="chapter " data-level="2.2.5" data-path="computed-properties.html">
             
-                <a href="../elements/computed-properties.html">
+                <a href="computed-properties.html">
             
                     
                     Computed Properties
@@ -729,7 +729,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Internal Chrome Pages</a>
+        <a href=".." >Event Listeners</a>
     </h1>
 </div>
 
@@ -744,19 +744,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="internal-chrome-pages">Internal Chrome Pages</h1>
-<p>A complete list of internal Chrome URLs is available at <a href="chrome://about/" target="_blank">chrome://about/</a></p>
-<h3 id="flags-of-interest">Flags of interest</h3>
-<ul>
-<li><code>chrome://flags</code> - Experimental features that may cause instability in the browser. <ul>
-<li><code>Enable Developer Tools experiments</code> - Useful for new additions to the developer tools.</li>
-<li><code>Enable Experimental JavaScript</code> - Enable <a href="https://github.com/lukehoban/es6features" target="_blank">ECMAScript 6</a> additions.</li>
-<li><code>Enable experimental Web Platform features</code> - Enable experimental features in Blink</li>
-</ul>
-</li>
-<li><code>chrome://inspect</code> - Device inspection</li>
-</ul>
+                                <h1 id="event-listeners">Event Listeners</h1>
+<p>Inspect event listeners associated with individual DOM nodes. Use the filter icon to restrict the event listeners to only the selected node.</p>
+<p><img src="event-listeners.png" alt="Audits"></p>
+<h4 id="exercise&#x200E;">Exercise&#x200E;</h4>
+<p>Find the onclick handler definition for the button below:</p>
+<button id="click-example">Alert Me</button>
 
+<script src="../elements/event-listeners.js"></script>
                                 
                                 </section>
                             
@@ -783,12 +778,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Basics">
+                <a href="dom-breakpoints.html" class="navigation navigation-prev " aria-label="Previous page: DOM Breakpoints">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="navigation.html" class="navigation navigation-next " aria-label="Next page: Navigation">
+                <a href="computed-properties.html" class="navigation navigation-next " aria-label="Next page: Computed Properties">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -799,7 +794,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Internal Chrome Pages","level":"2.1.1","depth":2,"next":{"title":"Navigation","level":"2.1.2","depth":2,"path":"basics/navigation.md","ref":"basics/navigation.md","articles":[]},"previous":{"title":"Basics","level":"2.1","depth":1,"path":"basics/README.md","ref":"basics/README.md","articles":[{"title":"Internal Chrome Pages","level":"2.1.1","depth":2,"path":"basics/chrome-pages.md","ref":"basics/chrome-pages.md","articles":[]},{"title":"Navigation","level":"2.1.2","depth":2,"path":"basics/navigation.md","ref":"basics/navigation.md","articles":[]},{"title":"Settings","level":"2.1.3","depth":2,"path":"basics/settings.md","ref":"basics/settings.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Web Application Debugging","gitbook":"*","description":"Intensive debugging web and mobile web application"},"file":{"path":"basics/chrome-pages.md","mtime":"2018-03-20T01:36:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-21T08:58:19.190Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Event Listeners","level":"2.2.4","depth":2,"next":{"title":"Computed Properties","level":"2.2.5","depth":2,"path":"elements/computed-properties.md","ref":"elements/computed-properties.md","articles":[]},"previous":{"title":"DOM Breakpoints","level":"2.2.3","depth":2,"path":"elements/dom-breakpoints.md","ref":"elements/dom-breakpoints.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Web Application Debugging","gitbook":"*","description":"Intensive debugging web and mobile web application"},"file":{"path":"elements/event-listeners.md","mtime":"2018-03-21T08:15:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-21T08:58:19.190Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
