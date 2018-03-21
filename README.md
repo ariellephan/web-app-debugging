@@ -14,3 +14,7 @@ Publish gh-pages on gh-pages:
 2. Run ```yarn run clean```
 3. Run ```yarn run build```
 4. Run ```yarn run gh-pages```
+
+Credits:
+Bret Little - https://github.com/blittle/chrome-dev-tools
+Google - https://developers.google.com/web/tools/chrome-devtools/
