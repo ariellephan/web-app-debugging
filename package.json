@@ -8,9 +8,10 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "gitbook install",
     "clean": "rm sources/html-editor/bower_components/lodash/README.md",
     "build": "gitbook build",
-    "publish": "yarn run clean && yarn run build",
+    "gh-pages": "cp -R _book/* .",
     "dev": "gitbook serve"
   },
   "dependencies": {

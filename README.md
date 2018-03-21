@@ -13,3 +13,4 @@ Publish gh-pages on gh-pages:
 1. Remove existing built in ```_book```
 2. Run ```yarn run clean```
 3. Run ```yarn run build```
+4. Run ```yarn run gh-pages```
