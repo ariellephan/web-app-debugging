@@ -17,6 +17,7 @@
   "dependencies": {
     "gitbook": "^3.2.3",
     "gitbook-cli": "^2.3.2",
-    "gitbook-plugin-codesandbox": "^0.1.1"
+    "gitbook-plugin-codesandbox": "^0.1.1",
+    "gitbook-plugin-livereload": "*"
   }
 }
