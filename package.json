@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm sources/html-editor/bower_components/lodash/README.md",
     "build": "gitbook build",
-    "publish": "yarn run clean && yarn run build"
+    "publish": "yarn run clean && yarn run build",
+    "dev": "gitbook serve"
   },
   "dependencies": {
     "gitbook": "^3.2.3",
