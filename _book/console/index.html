@@ -1,0 +1,839 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Console · Web Application Debugging</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="query-dom.html" />
+    
+    
+    <link rel="prev" href="../audits/README.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chrome Dev Tools</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../basics/">
+            
+                <a href="../basics/">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../basics/chrome-pages.html">
+            
+                <a href="../basics/chrome-pages.html">
+            
+                    
+                    Internal Chrome Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../basics/navigation.html">
+            
+                <a href="../basics/navigation.html">
+            
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../basics/settings.html">
+            
+                <a href="../basics/settings.html">
+            
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../elements/">
+            
+                <a href="../elements/">
+            
+                    
+                    Elements
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../elements/styles.html">
+            
+                <a href="../elements/styles.html">
+            
+                    
+                    Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../elements/less-sourcemaps.html">
+            
+                <a href="../elements/less-sourcemaps.html">
+            
+                    
+                    Source Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../elements/dom-breakpoints.html">
+            
+                <a href="../elements/dom-breakpoints.html">
+            
+                    
+                    DOM Breakpoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../elements/event-listeners.html">
+            
+                <a href="../elements/event-listeners.html">
+            
+                    
+                    Event Listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../elements/computed-properties.html">
+            
+                <a href="../elements/computed-properties.html">
+            
+                    
+                    Computed Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../network/">
+            
+                <a href="../network/">
+            
+                    
+                    Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../network/websockets.html">
+            
+                <a href="../network/websockets.html">
+            
+                    
+                    Websockets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../network/xhr-breakpoints.html">
+            
+                <a href="../network/xhr-breakpoints.html">
+            
+                    
+                    XHR Breakpoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../network/request-data.html">
+            
+                <a href="../network/request-data.html">
+            
+                    
+                    Copy Request Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../sources/">
+            
+                <a href="../sources/">
+            
+                    
+                    Sources
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../sources/pretty-print.html">
+            
+                <a href="../sources/pretty-print.html">
+            
+                    
+                    Pretty Print
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../sources/editing-content.html">
+            
+                <a href="../sources/editing-content.html">
+            
+                    
+                    Editing Content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../sources/local-modifications.html">
+            
+                <a href="../sources/local-modifications.html">
+            
+                    
+                    Local Modifications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../sources/workspaces.html">
+            
+                <a href="../sources/workspaces.html">
+            
+                    
+                    Workspaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../sources/debugging.html">
+            
+                <a href="../sources/debugging.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../sources/restart-frame.html">
+            
+                <a href="../sources/restart-frame.html">
+            
+                    
+                    Restart Frame
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../sources/long-resume.html">
+            
+                <a href="../sources/long-resume.html">
+            
+                    
+                    Long Resume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../sources/skip-frameworks.html">
+            
+                <a href="../sources/skip-frameworks.html">
+            
+                    
+                    Skipping Frameworks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../sources/conditional-breakpoints.html">
+            
+                <a href="../sources/conditional-breakpoints.html">
+            
+                    
+                    Conditional Breakpoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../sources/uncaught-exceptions.html">
+            
+                <a href="../sources/uncaught-exceptions.html">
+            
+                    
+                    Uncaught Exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../sources/async.html">
+            
+                <a href="../sources/async.html">
+            
+                    
+                    Asyncronous Stacktraces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../sources/store-as-global.html">
+            
+                <a href="../sources/store-as-global.html">
+            
+                    
+                    Store as Global
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../sources/web-workers.html">
+            
+                <a href="../sources/web-workers.html">
+            
+                    
+                    WebWorkers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.14" data-path="../sources/maps.html">
+            
+                <a href="../sources/maps.html">
+            
+                    
+                    SourceMaps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.15" data-path="../sources/snippets.html">
+            
+                <a href="../sources/snippets.html">
+            
+                    
+                    Snippets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../timeline/README.md">
+            
+                <span>
+            
+                    
+                    Timeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../profiles/README.md">
+            
+                <span>
+            
+                    
+                    Profiles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../audits/README.md">
+            
+                <span>
+            
+                    
+                    Audits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="query-dom.html">
+            
+                <a href="query-dom.html">
+            
+                    
+                    Query DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="monitor-events.html">
+            
+                <a href="monitor-events.html">
+            
+                    
+                    Monitor Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="commands.html">
+            
+                <a href="commands.html">
+            
+                    
+                    Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../mobile/README.md">
+            
+                <span>
+            
+                    
+                    Mobile
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../mobile/usb-debugging.md">
+            
+                <span>
+            
+                    
+                    USB Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../extensions/README.md">
+            
+                <span>
+            
+                    
+                    Extensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../themes/README.md">
+            
+                <span>
+            
+                    
+                    Custom Skins
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Frameworks Debugging</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Performance Debugging</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Mobile Debugging</li>
+        
+        
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Console</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="console">Console</h1>
+<p>In addition to providing a convenient workspace for testing code, the console also provides a chrome specific API for inspecting and debugging applications. It is important to remember that the console is available from all other tabs by pressing the <code>Esc</code> key.</p>
+<p><img src="console.png" alt="Audits"></p>
+<ol>
+<li>Clear the console output</li>
+<li>Filter the console to display specific output</li>
+<li>Change the console input to be executed with the context of a specific frame (frame, iframe, or extension).</li>
+<li>Enter multi-line code with <code>shift</code> + <code>enter</code></li>
+<li>The shortcut <code>ctrl</code> + <code>L</code> clears the console</li>
+</ol>
+<h4 id="exercise&#x200E;">Exercise&#x200E;</h4>
+<p>Load the console and notice at the top frame the global variable <code>iFrameApp</code> is not defined. Switch the frame to iframe.html and it is defined.</p>
+<iframe src="../console/iframe.html"></iframe>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../audits/README.md" class="navigation navigation-prev " aria-label="Previous page: Audits">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="query-dom.html" class="navigation navigation-next " aria-label="Next page: Query DOM">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Console","level":"2.8","depth":1,"next":{"title":"Query DOM","level":"2.8.1","depth":2,"path":"console/query-dom.md","ref":"console/query-dom.md","articles":[]},"previous":{"title":"Audits","level":"2.7","depth":1,"path":"audits/README.md","ref":"audits/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Web Application Debugging","gitbook":"*","description":"Intensive debugging web and mobile web application"},"file":{"path":"console/README.md","mtime":"2018-03-21T08:15:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-21T08:18:03.365Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
