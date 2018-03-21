@@ -1302,7 +1302,7 @@ gitbook-plugin-highlight@2.0.2:
   dependencies:
     highlight.js "9.2.0"
 
-gitbook-plugin-livereload@0.0.1:
+gitbook-plugin-livereload@*, gitbook-plugin-livereload@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/gitbook-plugin-livereload/-/gitbook-plugin-livereload-0.0.1.tgz#c0c9dc6f55f82fc24f97532b25287abbbb416b96"
 
