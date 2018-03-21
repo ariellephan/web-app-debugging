@@ -1,0 +1,14 @@
+{
+  "name": "web-app-debugging-guide",
+  "version": "1.0.0",
+  "description": "Steps to debug everything web",
+  "main": "index.js",
+  "repository": "https://github.com/ariellephan/web-app-debugging.git",
+  "author": "Arielle Nguyen <ariellephan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gitbook": "^3.2.3",
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-codesandbox": "^0.1.1"
+  }
+}
