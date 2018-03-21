@@ -17,5 +17,5 @@ https://ariellephan.github.io/web-app-debugging/
 
 ## Credits
 
-Bret Little - https://github.com/blittle/chrome-dev-tools
-Google - https://developers.google.com/web/tools/chrome-devtools/
+* Bret Little - https://github.com/blittle/chrome-dev-tools
+* Google - https://developers.google.com/web/tools/chrome-devtools/
