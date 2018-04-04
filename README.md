@@ -2,6 +2,7 @@
 Web Application Debugging Deep Dives
 
 Static Site Generated with GitBook
+http://web-app-debugging.surge.sh
 https://ariellephan.github.io/web-app-debugging/
 
 ## Dev on master
@@ -9,7 +10,11 @@ https://ariellephan.github.io/web-app-debugging/
 2. Run ```yarn run dev```
 3. Do not check in ```_book```
 
-## Publish gh-pages on gh-pages
+## Publish on master to http://web-app-debugging.surge.sh/ (author only)
+1. Run ```yarn run dev```
+2. Run ```surge _book```
+
+## Publish gh-pages on gh-pages 
 1. Remove existing built in ```_book```
 2. Run ```yarn run clean```
 3. Run ```yarn run build```
